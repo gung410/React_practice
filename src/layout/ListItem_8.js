@@ -1,44 +1,42 @@
-import React from "react";
-
-function ListItem_8() {
-    const listProduct = [
-        {
-            name: "iphone - 14",
-            price: "10000"
-        },
-        {
-            name: "iphone - 15",
-            price: "10000"
-        },
-        {
-            name: "iphone - 16",
-            price: "10000"
-        }]
-    const getList = listProduct.map((item , index) => {return(
-        <div class="row">
-            <div class="container">                   
-                    <div class="row">
-                        <div class="row">
-                
-                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                    name : {item.name}
-                </div>
-                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                    price : {item.price}
-                </div>
-                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                    {/* <button type="button" class="btn btn-primary" onClick={this.addMoreItem()}>submit</button>   */}
-                </div>                
+import React, { Component } from "react";
+const handleE = (txt) => {
+    console.log(txt)
+}
+class ListItem_8 extends Component {
+    constructor(props) {
+        super(props)
+        this.onHandle3 = this.onHandle3.bind(this)
+    }
+    onHandle3() {
+        console.log(this.props.name); // chỉ dùng khi muốn truyền param
+    }
+    render() {
+            return(
+    <div>
+        <div className="row" key={this.props.id}>
+            <div className="container">                   
+                    <div className="row">
+                        <div className="row">
+                            <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                name : {this.props.name}
+                                </div>
+                            <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                price : {this.props.price}
+                                </div>
+                                <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                            {<button type="button" className="btn btn-primary" onClick={() => handleE(this.props.name)}>submit </button>}
+                            <br/>           
+                            <br/>           
+                             <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                {<button type="button" className="btn btn-primary" onClick={this.onHandle3} > test cách 3 </button>}
+                                </div>   
+                        </div>                
                     </div>                                      
-                        </div>                                      
+                </div>                                      
             </div>
-        </div>   
-        ) 
-    })
-    return(
-        <div>
-            {getList}
-        </div>
+        </div>           
+    </div>
     )
+    }
 }
 export default ListItem_8;

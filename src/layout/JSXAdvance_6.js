@@ -36,7 +36,7 @@ const product3 = user.map((item,index) => {return(
                         </div>
                         <h3>info 2 using function</h3>
                         <div>
-                           { showInfoProduct(product2)}
+                           {showInfoProduct(product2)}
                         </div>
                         <h3>info 3 using expresion function</h3>
                         {product3}

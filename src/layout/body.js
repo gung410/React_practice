@@ -2,7 +2,8 @@ import {React} from "react";
 import HandleEvent_8 from "./HandleEvent_8";
 import Ep6_JsxAdvance from "./JSXAdvance_6";
 import Prop_7 from "./Props_7";
-import ListItem_8 from "./ListItem_8";
+import Ref_9 from "./Ref_9";
+import StateTest from "./State_10";
 
 function BodyPage() {
     return(
@@ -21,6 +22,8 @@ function BodyPage() {
                     <Ep6_JsxAdvance />
                     <Prop_7 />
                     <HandleEvent_8 />
+                    <Ref_9 />
+                    <StateTest />
         </main>
     )
 }
