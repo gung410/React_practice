@@ -3,6 +3,7 @@ import HandleEvent_8 from "./HandleEvent_8";
 import Ep6_JsxAdvance from "./JSXAdvance_6";
 import Prop_7 from "./Props_7";
 import Ref_9 from "./Ref_9";
+import SettingColor from "./Setting_color_11";
 import StateTest from "./State_10";
 
 function BodyPage() {
@@ -24,6 +25,7 @@ function BodyPage() {
                     <HandleEvent_8 />
                     <Ref_9 />
                     <StateTest />
+                    <SettingColor />
         </main>
     )
 }
